@@ -1,0 +1,42 @@
+{
+  "/imu/pos": {
+    "format": "text/json@single_file",
+    "path": "/docker-ros/data/rosbag2_2025_08_19-12_34_56",
+    "subfolder": "%name",
+    "naming": "%name"
+  },
+  "/drivers/lidar_fl/nearir_image": {
+    "format": "image/png",
+    "path": "/docker-ros/data/rosbag2_2025_08_19-12_34_56",
+    "subfolder": "%name",
+    "naming": "%name_%index"
+  },
+  "/drivers/lidar_fl/pointcloud": {
+    "format": "pointcloud/pcd",
+    "path": "/docker-ros/data/rosbag2_2025_08_19-12_34_56",
+    "subfolder": "%name",
+    "naming": "%name_%index",
+    "processors": [
+      {
+        "name": "field_mapping",
+        "args": {
+          "field_mapping": "intensity:i, reflecivity:r"
+        }
+      },
+      {
+        "name": "remove_fields",
+        "args": {
+          "fields_to_remove": "index"
+        }
+      }
+    ]
+  },
+  "__global__": {
+    "cpu_percentage": 85.0,
+    "resample_config": {
+      "master_topic": "/drivers/lidar_fl/pointcloud",
+      "association": "nearest",
+      "discard_eps": 0.5
+      }
+  }
+}

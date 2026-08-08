@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="styles/gui.qss">gui.qss</file>
+    <file alias="assets/badge.svg">assets/badge.svg</file>
+    <file alias="assets/loading.gif">assets/loading.gif</file>
+    <file alias="assets/title.png">assets/title.png</file>
+  </qresource>
+</RCC>

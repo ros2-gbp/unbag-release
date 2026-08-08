@@ -1,0 +1,245 @@
+QMainWindow {
+  background: #edf1f7;
+}
+
+QWidget#topBar {
+  background-color: #edf1f7;
+  border-bottom: 1px solid #cfd6e3;
+}
+
+QLabel#titleLabel {
+  color: #0f172a;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Ubuntu";
+}
+
+QPushButton#headerLoadButton {
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 18px;
+  padding: 10px 18px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+QPushButton#headerLoadButton:hover {
+  background-color: #2563eb;
+}
+
+QPushButton#headerLoadButton:pressed {
+  background-color: #1d4ed8;
+}
+
+QWidget#leftContainer, QWidget#globalContainer {
+  background-color: #f7f9fc;
+  border: 1px solid #cfd6e3;
+  border-radius: 6px;
+}
+
+QGroupBox {
+  font-weight: 600;
+  font-size: 13px;
+  color: #0f172a;
+}
+
+QGroupBox::title {
+  subcontrol-origin: margin;
+  subcontrol-position: top left;
+  padding: 4px 0 4px 2px;
+}
+
+QLabel.sectionHeader {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+QLabel.topicHeader {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+QScrollArea {
+  border: 1px solid #cfd6e3;
+  border-radius: 6px;
+  background: white;
+}
+
+QScrollArea > QWidget > QWidget {
+  background: white;
+}
+
+QWidget#settingsPage,
+QWidget#loadingPage {
+  background: #f7f9fc;
+}
+
+QTreeWidget {
+  background: white;
+  border: 1px solid #cfd6e3;
+  border-radius: 6px;
+  color: #0f172a;
+  selection-background-color: #e5edff;
+  selection-color: #0f172a;
+  show-decoration-selected: 1;
+  outline: 0;
+}
+
+QTreeWidget::item {
+  height: 28px;
+}
+
+QTreeWidget::item:selected,
+QTreeWidget::item:selected:active,
+QTreeWidget::item:selected:!active {
+  background: #e5edff;
+  color: #0f172a;
+}
+
+QTreeView::branch:selected,
+QTreeView::branch:selected:active,
+QTreeView::branch:selected:!active {
+  background: #e5edff;
+}
+
+QHeaderView::section {
+  background: #edf1f7;
+  border: none;
+  padding: 6px 8px;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+QPushButton#exportButton {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 12px 18px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+QPushButton#exportButton:hover {
+  background-color: #2563eb;
+}
+
+QPushButton#exportButton:pressed {
+  background-color: #1d4ed8;
+}
+
+QPushButton#exportButton:disabled {
+  background-color: #cfd6e3;
+  color: #475569;
+}
+
+QPushButton#cancelButton {
+  background: #b91c1c;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 12px 18px;
+}
+
+QPushButton#cancelButton:hover {
+  background: #991b1b;
+}
+
+QPushButton#cancelButton:pressed {
+  background: #7f1d1d;
+}
+
+QPushButton#cancelButton:disabled {
+  background: #fca5a5;
+  border-color: #fecaca;
+  color: white;
+}
+
+QProgressBar {
+  background: #f7f9fc;
+  border: 1px solid #cfd6e3;
+  border-radius: 6px;
+  padding: 2px;
+  text-align: center;
+  color: #1f2937;
+}
+
+QProgressBar::chunk {
+  background-color: #3b82f6;
+  border-radius: 4px;
+}
+
+QPushButton#exportBadgeButton[checkedState="true"] {
+  border: 2px solid #3dc522;
+  color: #1F6516;
+  background: #ecfdf3;
+  border-radius: 20px;
+  padding: 6px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+QPushButton#exportBadgeButton[checkedState="false"] {
+  border: 2px solid #d1d5db;
+  color: #6b7280;
+  background: #f8fafc;
+  border-radius: 20px;
+  padding: 6px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+QFrame#feedbackBanner[feedbackType="success"] {
+  background: #ecfdf3;
+  border: 1px solid #3dc522;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+QFrame#feedbackBanner[feedbackType="cancel"] {
+  background: #fff1f2;
+  border: 1px solid #b91c1c;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+QFrame#feedbackBanner QLabel {
+  color: #1F6516;
+  font-weight: 600;
+}
+
+QFrame#feedbackBanner[feedbackType="cancel"] QLabel {
+  color: #991b1b;
+}
+
+QToolButton#feedbackCloseButton {
+  border: none;
+  padding: 2px;
+  font-weight: 700;
+  color: #475569;
+}
+
+QToolButton#feedbackCloseButton:hover {
+  color: #0f172a;
+}
+
+QLabel#helpTextLabel {
+  color: gray;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+QLabel#placeholderHintLabel {
+  color: gray;
+  font-style: italic;
+  font-size: 18px;
+}
+
+QLineEdit[error="true"] {
+  border: 1px solid #ef4444;
+  background: #fff1f2;
+}
