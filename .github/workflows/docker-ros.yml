@@ -1,3 +1,5 @@
+name: docker-ros
+
 on: push
 jobs:
   docker-ros:
