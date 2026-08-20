@@ -21,6 +21,7 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Installation](#installation)  
+  - [apt (Recommended)](#apt-recommended)  
   - [From Source](#from-source)  
   - [Docker](#docker)  
 - [Quick Start](#quick-start)  
@@ -50,6 +51,17 @@ For high‑throughput workflows, *ros2 unbag* can spawn multiple worker processe
 Whether you prefer the **GUI for interactive exploration** or `ros2 unbag <args>` for automated pipelines, you have a flexible, extensible way to turn bag files into the data you need.
 
 ## Installation 
+
+### apt (Recommended)
+
+*ros2 unbag* is released as a binary package for ROS 2 Humble, Jazzy, Lyrical, and Rolling. Install it directly via `apt`:
+
+```bash
+sudo apt update
+sudo apt install ros-<distro>-unbag
+```
+
+Replace `<distro>` with your ROS 2 distribution (e.g. `humble`, `jazzy`, `lyrical`, `rolling`). No need to clone or build anything—`ros2 unbag` is available right away after sourcing your ROS 2 installation.
 
 ### From source
 
