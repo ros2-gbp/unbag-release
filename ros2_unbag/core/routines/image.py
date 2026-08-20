@@ -56,7 +56,7 @@ def export_compressed_image(msg, path: Path, fmt: str, metadata: ExportMetadata)
         np_arr = np.frombuffer(msg.data, np.uint8)
         img = cv2.imdecode(np_arr, cv2.IMREAD_UNCHANGED)
         ext = ".jpg" if desired_fmt == "jpeg" else ".png"
-        cv2.imwrite(path.with_suffix(ext), img)
+        cv2.imwrite(str(path.with_suffix(ext)), img)
 
 
 @ExportRoutine("sensor_msgs/msg/Image", ["image/png", "image/jpeg"], mode=ExportMode.MULTI_FILE)
@@ -84,4 +84,4 @@ def export_raw_image(msg, path: Path, fmt: str, metadata: ExportMetadata):
     if not ext:
         raise ValueError(f"Unsupported export format: {fmt}")
 
-    cv2.imwrite(path.with_suffix(ext), img)
+    cv2.imwrite(str(path.with_suffix(ext)), img)
