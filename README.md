@@ -1,3 +1,26 @@
+## unbag (rolling) - 1.3.2-1
+
+The packages in the `unbag` repository were released into the `rolling` distro by running `/usr/bin/bloom-release -y --no-web --ros-distro rolling --debug unbag` on `Fri, 06 Nov 2026 15:40:31 -0000`
+
+The `unbag` package was released.
+
+Version of package(s) in repository `unbag`:
+
+- upstream repository: https://github.com/ika-rwth-aachen/ros2_unbag.git
+- release repository: https://github.com/ros2-gbp/unbag-release.git
+- rosdistro version: `1.3.1-2`
+- old version: `1.3.1-2`
+- new version: `1.3.2-1`
+
+Versions of tools used:
+
+- bloom version: `0.14.4`
+- catkin_pkg version: `1.1.1`
+- rosdep version: `0.27.0`
+- rosdistro version: `1.1.0`
+- vcstools version: `0.1.42`
+
+
 ## unbag (kilted) - 1.3.1-1
 
 The packages in the `unbag` repository were released into the `kilted` distro by running `/usr/local/bin/bloom-release unbag -r kilted` on `Thu, 20 Aug 2026 13:13:48 -0000`
