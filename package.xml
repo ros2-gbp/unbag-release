@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="3">
   <name>unbag</name>
-  <version>1.3.1</version>
+  <version>1.3.2</version>
   <description>A ROS 2 tool for exporting bags to human readable files. Supports pluggable export routines to handle any message type.</description>
 
   <maintainer email="lukas.ostendorf@ika.rwth-aachen.de">Lukas Ostendorf</maintainer>
@@ -23,6 +23,7 @@
   <exec_depend>python3-tqdm</exec_depend>
   <exec_depend>rclpy</exec_depend>
   <exec_depend>rosbag2_py</exec_depend>
+  <exec_depend>rosbag2_compression_zstd</exec_depend>
   <exec_depend>rosidl_runtime_py</exec_depend>
   <exec_depend>ros2cli</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
